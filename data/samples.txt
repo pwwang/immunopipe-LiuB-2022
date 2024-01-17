@@ -1,0 +1,48 @@
+Sample	Timepoint	TimpointGroup	Response	Patient	Age	Gender	TumorType	Treatment	TreatmentHx	BiospySite	RNAData	TCRData
+P1_pre	pre	pre	Yes	P001	57	Female	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	Pre-treatment	LN metastasis	prepared-data/P1_pre/rna	prepared-data/P1_pre/tcr
+P1_post_1	post_1	post	Yes	P001	57	Female	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	LN metastasis	prepared-data/P1_post_1/rna	prepared-data/P1_post_1/tcr
+P1_post_2	post_2	post	Yes	P001	57	Female	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	LN metastasis	prepared-data/P1_post_2/rna	prepared-data/P1_post_2/tcr
+P1_post_3	post_3	post	No	P001	57	Female	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	Right lung tumour	prepared-data/P1_post_3/rna	prepared-data/P1_post_3/tcr
+P2_pre	pre	pre	NA	P002	72	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P2_pre/rna	prepared-data/P2_pre/tcr
+P3_pre	pre	pre	NA	P003	59	Male	LUAD	Treatment-naïve	NA	LN metastasis	prepared-data/P3_pre/rna	prepared-data/P3_pre/tcr
+P4_pre	pre	pre	NA	P004	57	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P4_pre/rna	prepared-data/P4_pre/tcr
+P5_pre	pre	pre	NA	P005	59	Male	LUSC	Treatment-naïve	NA	LN metastasis	prepared-data/P5_pre/rna	prepared-data/P5_pre/tcr
+P6_pre	pre	pre	NA	P006	57	Male	LUAD	Treatment-naïve	NA	Right lung tumour	prepared-data/P6_pre/rna	prepared-data/P6_pre/tcr
+P7_pre	pre	pre	NA	P007	79	Male	LUSC	Treatment-naïve	NA	Left lung tumour	prepared-data/P7_pre/rna	prepared-data/P7_pre/tcr
+P8_pre	pre	pre	NA	P008	62	Female	LUAD	Treatment-naïve	NA	Right lung tumour	prepared-data/P8_pre/rna	prepared-data/P8_pre/tcr
+P9_pre	pre	pre	NA	P009	52	Male	LUAD	Treatment-naïve	NA	Right lung tumour	prepared-data/P9_pre/rna	prepared-data/P9_pre/tcr
+P10_pre	pre	pre	Yes	P010	53	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	Pre-treatment	LN metastasis	prepared-data/P10_pre/rna	prepared-data/P10_pre/tcr
+P10_post_1	post_1	post	Yes	P010	53	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	LN metastasis	prepared-data/P10_post_1/rna	prepared-data/P10_post_1/tcr
+P11_pre	pre	pre	NA	P011	58	Male	LUSC	Treatment-naïve	NA	Kidney metastasis	prepared-data/P11_pre/rna	prepared-data/P11_pre/tcr
+P12_pre	pre	pre	NA	P012	65	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P12_pre/rna	prepared-data/P12_pre/tcr
+P13_pre	pre	pre	Yes	P013	61	Female	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	Pre-treatment	Liver metastasis	prepared-data/P13_pre/rna	prepared-data/P13_pre/tcr
+P13_post_1	post_1	post	Yes	P013	61	Female	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	Liver metastasis	prepared-data/P13_post_1/rna	prepared-data/P13_post_1/tcr
+P13_post_2	post_2	post	No	P013	61	Female	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	LN metastasis	prepared-data/P13_post_2/rna	prepared-data/P13_post_2/tcr
+P14_pre	pre	pre	NA	P014	76	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P14_pre/rna	prepared-data/P14_pre/tcr
+P15_pre	pre	pre	NA	P015	67	Male	LUAD	Treatment-naïve	NA	Left lung tumour	prepared-data/P15_pre/rna	prepared-data/P15_pre/tcr
+P16_pre	pre	pre	NA	P016	59	Female	LUAD	Treatment-naïve	NA	LN metastasis	prepared-data/P16_pre/rna	prepared-data/P16_pre/tcr
+P17_pre	pre	pre	NA	P017	66	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P17_pre/rna	prepared-data/P17_pre/tcr
+P18_pre	pre	pre	NA	P018	75	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P18_pre/rna	prepared-data/P18_pre/tcr
+P19_pre	pre	pre	Yes	P019	73	Female	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	Pre-treatment	LN metastasis	prepared-data/P19_pre/rna	prepared-data/P19_pre/tcr
+P19_post_1	post_1	post	Yes	P019	73	Female	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	LN metastasis	prepared-data/P19_post_1/rna	prepared-data/P19_post_1/tcr
+P20_pre	pre	pre	NA	P020	70	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P20_pre/rna	prepared-data/P20_pre/tcr
+P21_pre	pre	pre	NA	P021	48	Male	LUAD	Treatment-naïve	NA	Liver metastasis	prepared-data/P21_pre/rna	prepared-data/P21_pre/tcr
+P22_pre	pre	pre	NA	P022	70	Male	LUAD	Treatment-naïve	NA	Right lung tumour	prepared-data/P22_pre/rna	prepared-data/P22_pre/tcr
+P23_pre	pre	pre	NA	P023	74	Male	LUAD	Treatment-naïve	NA	Right lung tumour	prepared-data/P23_pre/rna	prepared-data/P23_pre/tcr
+P24_pre	pre	pre	NA	P024	59	Male	LUSC	Treatment-naïve	NA	LN metastasis	prepared-data/P24_pre/rna	prepared-data/P24_pre/tcr
+P25_pre	pre	pre	NA	P025	47	Female	LUAD	Treatment-naïve	NA	Liver metastasis	prepared-data/P25_pre/rna	prepared-data/P25_pre/tcr
+P26_pre	pre	pre	NA	P026	66	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P26_pre/rna	prepared-data/P26_pre/tcr
+P27_pre	pre	pre	NA	P027	78	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P27_pre/rna	prepared-data/P27_pre/tcr
+P28_pre	pre	pre	NA	P028	74	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P28_pre/rna	prepared-data/P28_pre/tcr
+P29_pre	pre	pre	Yes	P029	52	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	Pre-treatment	Left lung tumour	prepared-data/P29_pre/rna	prepared-data/P29_pre/tcr
+P29_post_1	post_1	post	Yes	P029	52	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	Left lung tumour	prepared-data/P29_post_1/rna	prepared-data/P29_post_1/tcr
+P30_pre	pre	pre	Yes	P030	65	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	Pre-treatment	Right lung tumour	prepared-data/P30_pre/rna	prepared-data/P30_pre/tcr
+P30_post_1	post_1	post	Yes	P030	65	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	Right lung tumour	prepared-data/P30_post_1/rna	prepared-data/P30_post_1/tcr
+P33_pre	pre	pre	Yes	P033	48	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	Pre-treatment	Right lung tumour	prepared-data/P33_pre/rna	prepared-data/P33_pre/tcr
+P33_post_1	post_1	post	Yes	P033	48	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	Right lung tumour	prepared-data/P33_post_1/rna	prepared-data/P33_post_1/tcr
+P34_pre	pre	pre	NA	P034	65	Male	LUSC	Treatment-naïve	NA	Right lung tumour	prepared-data/P34_pre/rna	NA
+P35_pre	pre	pre	Yes	P035	71	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	Pre-treatment	Right lung tumour	prepared-data/P35_pre/rna	prepared-data/P35_pre/tcr
+P35_post_1	post_1	post	Yes	P035	71	Male	LUAD	Pembrolizumab + Carboplatin + Pemetrexed 	On treatment	Right lung tumour	prepared-data/P35_post_1/rna	prepared-data/P35_post_1/tcr
+P36_post_1	post_1	post	No	P036	59	Male	LUSC	Pembrolizumab + Carboplatin + Albumin-bound paclitaxel	On treatment	Right lung tumour	prepared-data/P36_post_1/rna	prepared-data/P36_post_1/tcr
+P37_post_1	post_2	post	No	P037	64	Male	LUSC	Pembrolizumab + Carboplatin + Albumin-bound paclitaxel	On treatment	Left lung tumour	prepared-data/P37_post_1/rna	prepared-data/P37_post_1/tcr
+P38_post_1	post_3	post	No	P038	62	Male	LUSC	Pembrolizumab + Carboplatin + Albumin-bound paclitaxel	On treatment	Left lung tumour	prepared-data/P38_post_1/rna	prepared-data/P38_post_1/tcr
