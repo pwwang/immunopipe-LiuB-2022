@@ -1,0 +1,39 @@
+cd4_subcluster	comparison	n	mean	t_pval
+s1	Post non-responsive - Post responsive	5; 9	0.136; 0.15	0.711297285966799
+s2	Post non-responsive - Post responsive	5; 9	0.136; 0.158	0.653606662107213
+s3	Post non-responsive - Post responsive	5; 9	0.113; 0.107	0.898411875383599
+s4	Post non-responsive - Post responsive	5; 9	0.084; 0.108	0.559877164164503
+s5	Post non-responsive - Post responsive	5; 9	0.085; 0.104	0.552430304669888
+s6	Post non-responsive - Post responsive	5; 9	0.026; 0.03	0.793402081953571
+s7	Post non-responsive - Post responsive	5; 9	0.045; 0.101	0.00100219133329228
+s8	Post non-responsive - Post responsive	5; 9	0.209; 0.104	0.403827367247552
+s9	Post non-responsive - Post responsive	5; 9	0.046; 0.068	0.0848513957870156
+s10	Post non-responsive - Post responsive	5; 9	0.059; 0.039	0.195161515554573
+s11	Post non-responsive - Post responsive	5; 9	0.055; 0.023	0.179861286983894
+s12	Post non-responsive - Post responsive	4; 8	0.006; 0.008	0.663468141969314
+s1	Post non-responsive - Treatment naive	5; 33	0.136; 0.17	0.253320119621093
+s2	Post non-responsive - Treatment naive	5; 33	0.136; 0.153	0.697543611183724
+s3	Post non-responsive - Treatment naive	5; 33	0.113; 0.122	0.784046472301746
+s4	Post non-responsive - Treatment naive	5; 33	0.084; 0.093	0.806147746813775
+s5	Post non-responsive - Treatment naive	5; 33	0.085; 0.105	0.523392555379701
+s6	Post non-responsive - Treatment naive	5; 33	0.026; 0.072	0.0348171188009446
+s7	Post non-responsive - Treatment naive	5; 33	0.045; 0.073	0.0307398650786819
+s8	Post non-responsive - Treatment naive	5; 33	0.209; 0.05	0.208785125037238
+s9	Post non-responsive - Treatment naive	5; 33	0.046; 0.066	0.0931805386184213
+s10	Post non-responsive - Treatment naive	5; 32	0.059; 0.063	0.759026623175432
+s11	Post non-responsive - Treatment naive	5; 33	0.055; 0.019	0.14106689603804
+s12	Post non-responsive - Treatment naive	4; 31	0.006; 0.016	0.0502786075436993
+s13	Post non-responsive - Treatment naive	NULL; 1	0.02	NA
+s1	Post responsive - Treatment naive	9; 33	0.15; 0.17	0.523793370395665
+s2	Post responsive - Treatment naive	9; 33	0.158; 0.153	0.861963618069636
+s3	Post responsive - Treatment naive	9; 33	0.107; 0.122	0.690692132112657
+s4	Post responsive - Treatment naive	9; 33	0.108; 0.093	0.495301321478412
+s5	Post responsive - Treatment naive	9; 33	0.104; 0.105	0.979811808688059
+s6	Post responsive - Treatment naive	9; 33	0.03; 0.072	0.0371657830902786
+s7	Post responsive - Treatment naive	9; 33	0.101; 0.073	0.000987617449146958
+s8	Post responsive - Treatment naive	9; 33	0.104; 0.05	0.306329261918032
+s9	Post responsive - Treatment naive	9; 33	0.068; 0.066	0.793228318709966
+s10	Post responsive - Treatment naive	9; 32	0.039; 0.063	0.114784619630988
+s11	Post responsive - Treatment naive	9; 33	0.023; 0.019	0.459579177581455
+s12	Post responsive - Treatment naive	8; 31	0.008; 0.016	0.0851752409403476
+s13	Post responsive - Treatment naive	NULL; 1	0.02	NA
