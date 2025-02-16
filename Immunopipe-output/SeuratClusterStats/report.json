@@ -1,0 +1,421 @@
+{
+  "Clustree plots": {
+    "#": {
+      "#": {
+        "table_of_images": [
+          {
+            "kind": "table_image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/clustrees/seurat_clusters.clustree.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/clustrees/seurat_clusters.clustree.pdf",
+            "name": "seurat_clusters",
+            "descr": "Resolutions: 1.8, 1.85, 1.9, 1.95, 2.05, 2.1, 2; resolution used: 2"
+          },
+          {
+            "kind": "table_image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/clustrees/cd4_subcluster.clustree.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/clustrees/cd4_subcluster.clustree.pdf",
+            "name": "cd4_subcluster",
+            "descr": "Resolutions: 0.5, 0.55, 0.65, 0.7, 0.6; resolution used: 0.6"
+          },
+          {
+            "kind": "table_image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/clustrees/cd8_subcluster.clustree.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/clustrees/cd8_subcluster.clustree.pdf",
+            "name": "cd8_subcluster",
+            "descr": "Resolutions: 0.05, 0.15, 0.2, 0.1; resolution used: 0.1"
+          }
+        ]
+      }
+    }
+  },
+  "Number of cells in each cluster": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Plots showing the number of cells per cluster"
+          }
+        ],
+        "tabs": [
+          {
+            "name": "Bar Plot",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/stats/Number-of-cells-in-each-cluster.bar.png",
+                "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/stats/Number-of-cells-in-each-cluster.bar.pdf"
+              }
+            ]
+          },
+          {
+            "name": "Pie Chart",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/stats/Number-of-cells-in-each-cluster.pie.png",
+                "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/stats/Number-of-cells-in-each-cluster.pie.pdf"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Number of cells in each cluster by Sample": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Plots showing the number/faction of cells per cluster, by Sample"
+          }
+        ],
+        "tabs": [
+          {
+            "name": "Bar Plot",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/stats/Number-of-cells-in-each-cluster-by-Sample.bar.png",
+                "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/stats/Number-of-cells-in-each-cluster-by-Sample.bar.pdf"
+              }
+            ]
+          },
+          {
+            "name": "Table",
+            "contents": [
+              {
+                "kind": "table",
+                "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/stats/Number-of-cells-in-each-cluster-by-Sample.txt"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Number of genes expressed in each cluster": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Plots showing the number of genes expressed in each seurat_clusters"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/ngenes/Number-of-genes-expressed-in-each-cluster.boxplot.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/ngenes/Number-of-genes-expressed-in-each-cluster.boxplot.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "T and NK markers on heatmap": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Average expression values for selected features, by seurat_clusters"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/T-and-NK-markers-on-heatmap.avgheatmap.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/T-and-NK-markers-on-heatmap.avgheatmap.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Gene expressions for Tregs (Pre responsive vs Post non-responsive)": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "violinplots for selected features, by Tregs"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-for-Tregs-Pre-responsive-vs-Post-non-responsive-.violin.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-for-Tregs-Pre-responsive-vs-Post-non-responsive-.violin.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Gene expressions on UMAP (CD8 T cells)": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "violinplots for selected features, by cd8_subcluster"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-on-UMAP-CD8-T-cells-.violin.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-on-UMAP-CD8-T-cells-.violin.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "T and NK markers on UMAP": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "featureplots for selected features, by seurat_clusters"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/T-and-NK-markers-on-UMAP.feature.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/T-and-NK-markers-on-UMAP.feature.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Dotplot of gene expressions for CD4 T cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "dotplots for selected features, by cd4_subcluster"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Dotplot-of-gene-expressions-for-CD4-T-cells.dot.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Dotplot-of-gene-expressions-for-CD4-T-cells.dot.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Gene expressions on UMAP (CD4 T cells)": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "featureplots for selected features, by cd4_subcluster"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-on-UMAP-CD4-T-cells-.feature.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-on-UMAP-CD4-T-cells-.feature.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Gene expressions for Tregs (Pre responsive vs Post responsive)": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "violinplots for selected features, by Tregs"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-for-Tregs-Pre-responsive-vs-Post-responsive-.violin.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-for-Tregs-Pre-responsive-vs-Post-responsive-.violin.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Marker expressions for CD8 T cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "featureplots for selected features, by cd8_subcluster"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Marker-expressions-for-CD8-T-cells.feature.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Marker-expressions-for-CD8-T-cells.feature.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Gene expressions on Heatmap (CD8 T cells)": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Average expression values for selected features, by Sample"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-on-Heatmap-CD8-T-cells-.avgheatmap.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Gene-expressions-on-Heatmap-CD8-T-cells-.avgheatmap.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Dotplot of gene expressions for CD8 T cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "dotplots for selected features, by cd8_subcluster"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Dotplot-of-gene-expressions-for-CD8-T-cells.dot.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/features/Dotplot-of-gene-expressions-for-CD8-T-cells.dot.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Group on UMAP for CD4 T cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Dimensionality reduction plot for Group"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Group-on-UMAP-for-CD4-T-cells.dim.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Group-on-UMAP-for-CD4-T-cells.dim.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "UMAP for CD4 T cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Dimensionality reduction plot for cd4_subcluster"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/UMAP-for-CD4-T-cells.dim.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/UMAP-for-CD4-T-cells.dim.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "UMAP for CD8 T cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Dimensionality reduction plot for cd8_subcluster"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/UMAP-for-CD8-T-cells.dim.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/UMAP-for-CD8-T-cells.dim.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "UMAP for all cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Dimensionality reduction plot for seurat_clusters"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/UMAP-for-all-cells.dim.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/UMAP-for-all-cells.dim.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Patient on UMAP for CD4 T cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Dimensionality reduction plot for Patient"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Patient-on-UMAP-for-CD4-T-cells.dim.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Patient-on-UMAP-for-CD4-T-cells.dim.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Group on UMAP for CD4 T cells (separated)": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Dimensionality reduction plot for cd4_subcluster"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Group-on-UMAP-for-CD4-T-cells-separated-.dim.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Group-on-UMAP-for-CD4-T-cells-separated-.dim.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Patients on UMAP for CD8 T cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Dimensionality reduction plot for Patient"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Patients-on-UMAP-for-CD8-T-cells.dim.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Patients-on-UMAP-for-CD8-T-cells.dim.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "Treatments on UMAP for CD8 T cells": {
+    "#": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "Dimensionality reduction plot for cd8_subcluster"
+          },
+          {
+            "kind": "image",
+            "src": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Treatments-on-UMAP-for-CD8-T-cells.dim.png",
+            "download": "/workdir/Immunopipe-output/SeuratClusterStats/samples.seurat.cluster_stats/dimplots/Treatments-on-UMAP-for-CD8-T-cells.dim.pdf"
+          }
+        ]
+      }
+    }
+  }
+}

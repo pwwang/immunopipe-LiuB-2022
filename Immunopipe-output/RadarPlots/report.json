@@ -1,0 +1,185 @@
+{
+  "Number cells of expanded clonotypes in the Th1-like": {
+    "#": {
+      "#": {
+        "tabs": [
+          {
+            "name": "Radar Plot",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Number-cells-of-expanded-clonotypes-in-the-Th1-like/plot.png",
+                "download": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Number-cells-of-expanded-clonotypes-in-the-Th1-like/plot.pdf"
+              }
+            ]
+          },
+          {
+            "name": "Count Table",
+            "contents": [
+              {
+                "kind": "table",
+                "data": {
+                  "index_col": 0
+                },
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Number-cells-of-expanded-clonotypes-in-the-Th1-like/counts.tsv"
+              }
+            ]
+          },
+          {
+            "name": "Percentage Table",
+            "contents": [
+              {
+                "kind": "table",
+                "data": {
+                  "index_col": 0
+                },
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Number-cells-of-expanded-clonotypes-in-the-Th1-like/percentages.tsv"
+              }
+            ]
+          },
+          {
+            "name": "Barplot",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Number-cells-of-expanded-clonotypes-in-the-Th1-like/barplot.png",
+                "download": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Number-cells-of-expanded-clonotypes-in-the-Th1-like/barplot.pdf"
+              }
+            ]
+          },
+          {
+            "name": "Tests",
+            "contents": [
+              {
+                "kind": "table",
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Number-cells-of-expanded-clonotypes-in-the-Th1-like/tests.txt"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Proportion in CD4 T cells": {
+    "#": {
+      "#": {
+        "tabs": [
+          {
+            "name": "Radar Plot",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD4-T-cells/plot.png",
+                "download": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD4-T-cells/plot.pdf"
+              }
+            ]
+          },
+          {
+            "name": "Count Table",
+            "contents": [
+              {
+                "kind": "table",
+                "data": {
+                  "index_col": 0
+                },
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD4-T-cells/counts.tsv"
+              }
+            ]
+          },
+          {
+            "name": "Percentage Table",
+            "contents": [
+              {
+                "kind": "table",
+                "data": {
+                  "index_col": 0
+                },
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD4-T-cells/percentages.tsv"
+              }
+            ]
+          },
+          {
+            "name": "Barplot",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD4-T-cells/barplot.png",
+                "download": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD4-T-cells/barplot.pdf"
+              }
+            ]
+          },
+          {
+            "name": "Tests",
+            "contents": [
+              {
+                "kind": "table",
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD4-T-cells/tests.txt"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "Proportion in CD8 T cells": {
+    "#": {
+      "#": {
+        "tabs": [
+          {
+            "name": "Radar Plot",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD8-T-cells/plot.png",
+                "download": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD8-T-cells/plot.pdf"
+              }
+            ]
+          },
+          {
+            "name": "Count Table",
+            "contents": [
+              {
+                "kind": "table",
+                "data": {
+                  "index_col": 0
+                },
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD8-T-cells/counts.tsv"
+              }
+            ]
+          },
+          {
+            "name": "Percentage Table",
+            "contents": [
+              {
+                "kind": "table",
+                "data": {
+                  "index_col": 0
+                },
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD8-T-cells/percentages.tsv"
+              }
+            ]
+          },
+          {
+            "name": "Barplot",
+            "contents": [
+              {
+                "kind": "image",
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD8-T-cells/barplot.png",
+                "download": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD8-T-cells/barplot.pdf"
+              }
+            ]
+          },
+          {
+            "name": "Tests",
+            "contents": [
+              {
+                "kind": "table",
+                "src": "/workdir/Immunopipe-output/RadarPlots/samples.seurat.radar_plots/Proportion-in-CD8-T-cells/tests.txt"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

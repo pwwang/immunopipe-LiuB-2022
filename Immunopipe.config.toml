@@ -1,0 +1,248 @@
+[plugin_opts]
+args_dump = true
+
+[SampleInfo.in]
+infile = "data/samples.txt"
+
+[SeuratPreparing.envs]
+cell_qc = "nFeature_RNA >= 600 & nCount_RNA < 25000 & nCount_RNA > 600"
+use_sct = false
+FindVariableFeatures = { nfeatures = 3000 }
+
+[SeuratClusteringOfAllCells.envs]
+cache = "./.cluster_cache"
+FindClusters = { resolution = 1.6 }
+
+[TCellSelection.envs]
+ignore_tcr = true
+kmeans = {nstart = 10}
+indicator_genes = ["CD3E", "CD3D", "CD3G", "NKG7"]
+
+[ImmunarchLoading.envs]
+mode = "paired"
+
+[ModuleScoreCalculator.envs.modules.Exhaustion]
+features = ["HAVCR2", "ENTPD1", "LAYN", "LAG3"]
+
+[ModuleScoreCalculator.envs.modules.Proliferation]
+features = ["STMN1", "TUBB"]
+
+[SeuratClustering.envs]
+cache = "./.cluster_cache"
+# 38 clusters in original paper
+FindClusters = { resolution = [1.8, 1.85, 1.9, 1.95, 2.05, 2.1, 2] }
+
+[SeuratSubClustering.envs.cases.cd4_subcluster]
+subset = 'seurat_clusters %in% c("c32", "c29", "c24", "c23", "c20", "c4", "c17", "c10", "c8", "c6", "c3", "c34", "c5", "c18", "c31")'
+FindClusters = { resolution = [0.5, 0.55, 0.65, 0.7, 0.6] }
+
+[SeuratSubClustering.envs.cases.cd8_subcluster]
+subset = 'seurat_clusters %in% c("c33", "c12", "c28", "c1", "c2", "c25", "c13", "c7", "c9", "c16", "c14", "c33", "c15", "c22")'
+FindClusters = { resolution = [0.05, 0.15, 0.2, 0.1] }
+
+[SeuratClusterStats.envs.mutaters]
+Tregs = 'if_else(cd4_subcluster %in% c("s2", "s3", "s9", "s10"), "Tregs", NA)'
+
+[SeuratClusterStats.envs.features."T and NK markers on heatmap"]
+kind = "avgheatmap"
+features = ["CD8A", "CD4", "NKG7", "MKI67"]
+
+[SeuratClusterStats.envs.dimplots."Group on UMAP for CD4 T cells"]
+ident = "cd4_subcluster"
+group-by = "Group"
+
+[IntegratingTCR.envs.mutaters]
+TCR_Presence = 'if_else(is.na(CDR3.aa), "TCR_absent", "TCR_present")'
+Group = """case_when(
+    TimpointGroup == "post" & Response == "Yes" ~ "Post responsive",
+    TimpointGroup == "post" & Response == "No" ~ "Post non-responsive",
+    TRUE ~ "Treatment naive"
+)"""
+Group2 = """case_when(
+    TimpointGroup == "post" & Response == "Yes" ~ "Post responsive",
+    TimpointGroup == "post" & Response == "No" ~ "Post non-responsive",
+    TimpointGroup == "pre" & Response == "Yes" ~ "Pre responsive",
+    TRUE ~ "Treatment naive"
+)"""
+
+# Figure 1c
+[SeuratClusterStats.envs.dimplots."UMAP for CD4 T cells"]
+ident = "cd4_subcluster"
+
+# Figure 1d
+[RadarPlots.envs.cases."Proportion in CD4 T cells"]
+ident = "cd4_subcluster"
+breakdown = "Sample"
+test = "t"
+by = "Group"
+
+# Figure 1e
+[MarkersFinder.envs.cases."post-r vs post-nr in Tregs"]
+subset = 'cd4_subcluster %in% c("s2", "s3", "s9", "s10")'
+group-by = "Group"
+ident-1 = "Post responsive"
+ident-2 = "Post non-responsive"
+
+# Figure 1f
+[SeuratClusterStats.envs.features."Gene expressions for Tregs (Pre responsive vs Post non-responsive)"]
+ident = "Tregs"
+kind = "violin"
+ncol = 8
+subset = 'Group2 %in% c("Pre responsive", "Post non-responsive")'
+split-by = "Group2"
+features = [
+    "IL1R1", "IL1R2", "IL21R", "LAYN", "TNFRSF9", "REL",
+    "TNFRSF18", "TNFRSF4",
+]
+devpars = { height = 500 }
+
+[Immunarch.envs.volumes.cases.DEFAULT]
+
+# Figure 1g
+[Immunarch.envs.volumes.cases."Expanded clonotypes in Th1-like"]
+# High expression of CXCL13 in s5
+subset = 'cd4_subcluster == "s5" & Group %in% c("Post responsive", "Post non-responsive") & Clones > 2'
+by = "Group"
+
+# Figure 1h
+[RadarPlots.envs.cases."Number cells of expanded clonotypes in the Th1-like"]
+# High expression of CXCL13 in s5
+subset = 'cd4_subcluster == "s5" & Group %in% c("Post responsive", "Post non-responsive") & Clones > 2'
+breakdown = "Sample"
+test = "wilcox"
+by = "Group"
+
+# Figure 2c
+[SeuratClusterStats.envs.dimplots."UMAP for CD8 T cells"]
+ident = "cd8_subcluster"
+
+# Figure 2d
+[SeuratClusterStats.envs.features."Gene expressions on UMAP (CD8 T cells)"]
+kind = "violin"
+features = ["PDCD1", "CTLA4", "TIGIT", "HAVCR2", "GZMK", "MKI67"]
+ncol = 2
+ident = "cd8_subcluster"
+
+# Figure E2a
+[SeuratClusterStats.envs.dimplots."UMAP for all cells"]
+
+# Figure E2b
+[SeuratClusterStats.envs.features."T and NK markers on UMAP"]
+kind = "feature"
+features = ["CD8A", "CD4", "NKG7", "MKI67"]
+ncol = 2
+
+[Immunarch.envs.counts.cases.DEFAULT]
+
+# Figure E2c (left)
+[Immunarch.envs.counts.cases."Clone size distribution in CD8 T cells"]
+# High expression of CXCL13 in s5
+subset = '!is.na(cd8_subcluster)'
+
+# Figure E2c (right)
+[Immunarch.envs.counts.cases."Clone size distribution in CD4 T cells"]
+# High expression of CXCL13 in s5
+subset = '!is.na(cd4_subcluster)'
+
+# Figure E2d
+[SeuratClusterStats.envs.dimplots."Patient on UMAP for CD4 T cells"]
+ident = "cd4_subcluster"
+group-by = "Patient"
+
+# Figure E2e
+[SeuratClusterStats.envs.dimplots."Group on UMAP for CD4 T cells (separated)"]
+ident = "cd4_subcluster"
+split-by = "Group"
+ncol = 2
+
+# Figure E2f
+[SeuratClusterStats.envs.features."Dotplot of gene expressions for CD4 T cells"]
+ident = "cd4_subcluster"
+kind = "dot"
+features = [
+    "CD69", "TNFSF9", "CRIP1", "UBA52", "TUBB", "TUBA1B", "TYMS", "STMN1",
+    "MKI67", "FOXP3", "CCR8", "LAYN", "IFNG", "PDCD1", "TOX", "CXCL13",
+    "TCF7", "RPS27", "RPL41", "RPS29", "LY6E", "IFI6", "ISG15", "IFI27",
+    "DUSP1", "FOSB", "FOS", "GZMK", "CCL5", "GZMA", "RGCC", "MYADM",
+    "LMNA", "ANXA1", "CCR7",
+]
+
+# Figure E2g
+[SeuratClusterStats.envs.features."Gene expressions on UMAP (CD4 T cells)"]
+kind = "feature"
+features = [
+    "CXCL13", "MKI67", "ISG15", "CCR7", "SELL", "LMNA", "ANXA1", "GZMA",
+    "CCR8", "FOXP3",
+]
+ncol = 4
+ident = "cd4_subcluster"
+
+# Figure E2h
+[MarkersFinder.envs.cases."pre-rx vs post-rx in Tregs"]
+subset = 'cd4_subcluster %in% c("s2", "s3", "s9", "s10")'
+group-by = "Group2"
+ident-1 = "Pre responsive"
+ident-2 = "Post responsive"
+
+# Figure E2i
+[SeuratClusterStats.envs.features."Gene expressions for Tregs (Pre responsive vs Post responsive)"]
+ident = "Tregs"
+kind = "violin"
+ncol = 8
+subset = 'Group2 %in% c("Pre responsive", "Post responsive")'
+split-by = "Group2"
+features = [
+    "IL1R1", "IL1R2", "IL21R", "LAYN", "TNFRSF9", "REL",
+    "TNFRSF18", "TNFRSF4",
+]
+devpars = { height = 500 }
+
+# Figure 3b
+[SeuratClusterStats.envs.dimplots."Patients on UMAP for CD8 T cells"]
+ident = "cd8_subcluster"
+group-by = "Patient"
+
+# Figure 3c,3d
+[SeuratClusterStats.envs.dimplots."Treatments on UMAP for CD8 T cells"]
+ident = "cd8_subcluster"
+split-by = "Group2"
+ncol = 2
+
+# Figure 3e
+[SeuratClusterStats.envs.features."Marker expressions for CD8 T cells"]
+ident = "cd8_subcluster"
+kind = "feature"
+features = [
+    "HAVCR2", "ENTPD1", "PDCD1", "CTLA4", "ITGAE", "CXCL13", "GZMK", "CCR7",
+    "TCF7", "SELL", "GZMA", "GZMB", "GNLY", "PRF1", "IFNG", "NKG7", "TNFRSF9",
+    "EOMES", "TOX", "ID2", "MKI67", "ZNF683", "ZEB2", "TBX21", "HOPX",
+]
+ncol = 5
+
+# Figure 3f
+[SeuratClusterStats.envs.features."Gene expressions on Heatmap (CD8 T cells)"]
+kind = "avgheatmap"
+ident = "Sample"
+subset = "!is.na(cd8_subcluster) & Group2 %in% c('Pre responsive', 'Post responsive')"
+features = [
+    "GZMM", "IL32", "JCHAIN", "ITGAD", "ITGAX", "GZMA", "CCL5", "CXCR3",
+    "CXCR4", "ANXA1", "ESCO2", "CA5B", "SCPEP1", "AHNAK",
+]
+
+# Figure 3h
+[SeuratClusterStats.envs.features."Dotplot of gene expressions for CD8 T cells"]
+ident = "cd8_subcluster"
+kind = "dot"
+features = [
+    "ENTPD1", "STMN1", "MKI67", "ITGAE", "HAVCR2", "TIGIT", "GZMK", "CD69", "FOSB",
+    "CCL4L2", "CCL4", "FOS", "CXCR6", "GZMA", "TXNIP", "FKBP5", "MYADM", "HSPA1B",
+    "DNAJA1", "HSPA1A", "CXCR4", "CD28", "TUBA4A", "CCR7", "ANXA1", "LMNA", "IL7R",
+    "GPR183",
+]
+
+# Figure 3j
+[RadarPlots.envs.cases."Proportion in CD8 T cells"]
+ident = "cd8_subcluster"
+breakdown = "Sample"
+test = "t"
+by = "Group"

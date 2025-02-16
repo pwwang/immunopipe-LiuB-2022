@@ -1,0 +1,140 @@
+{
+  "post-r vs post-nr in Tregs": {
+    "Markers": {
+      "#": {
+        "tabs": [
+          {
+            "title": "Significant Markers",
+            "ui": "flat",
+            "contents": [
+              {
+                "kind": "descr",
+                "content": "The markers are found using Seurat's FindMarkers function, and filtered by: p_val_adj &lt; 0.05"
+              },
+              {
+                "kind": "table",
+                "data": {
+                  "nrows": 100
+                },
+                "src": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/post-r-vs-post-nr-in-Tregs/markers.txt"
+              }
+            ]
+          },
+          {
+            "title": "Volcano Plot",
+            "ui": "flat",
+            "contents": [
+              {
+                "kind": "descr",
+                "content": "The volcano plot is generated using ggplot2. The significant markers are highlighted in blue and red, indicating up-regulated and down-regulated genes, respectively. The non-significant genes are shown in grey. "
+              },
+              {
+                "kind": "img",
+                "src": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/post-r-vs-post-nr-in-Tregs/volcano.png",
+                "download": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/post-r-vs-post-nr-in-Tregs/volcano.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Dot Plot",
+            "ui": "flat",
+            "contents": [
+              {
+                "kind": "descr",
+                "content": "The dot plot is generated using Seurat's DotPlot function. The top significant markers are used as input. The sizes of the dots are proportional to the percentage of cells expressing the gene in each group. The colors of the dots are proportional to the average expression of the gene in each group. "
+              },
+              {
+                "kind": "img",
+                "src": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/post-r-vs-post-nr-in-Tregs/dotplot.png",
+                "download": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/post-r-vs-post-nr-in-Tregs/dotplot.pdf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Enrichment Analysis": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "The enrichment analysis is done using Enrichr. The significant markers are used as input. "
+          },
+          {
+            "kind": "enrichr",
+            "dir": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/post-r-vs-post-nr-in-Tregs"
+          }
+        ]
+      }
+    }
+  },
+  "pre-rx vs post-rx in Tregs": {
+    "Markers": {
+      "#": {
+        "tabs": [
+          {
+            "title": "Significant Markers",
+            "ui": "flat",
+            "contents": [
+              {
+                "kind": "descr",
+                "content": "The markers are found using Seurat's FindMarkers function, and filtered by: p_val_adj &lt; 0.05"
+              },
+              {
+                "kind": "table",
+                "data": {
+                  "nrows": 100
+                },
+                "src": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/pre-rx-vs-post-rx-in-Tregs/markers.txt"
+              }
+            ]
+          },
+          {
+            "title": "Volcano Plot",
+            "ui": "flat",
+            "contents": [
+              {
+                "kind": "descr",
+                "content": "The volcano plot is generated using ggplot2. The significant markers are highlighted in blue and red, indicating up-regulated and down-regulated genes, respectively. The non-significant genes are shown in grey. "
+              },
+              {
+                "kind": "img",
+                "src": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/pre-rx-vs-post-rx-in-Tregs/volcano.png",
+                "download": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/pre-rx-vs-post-rx-in-Tregs/volcano.pdf"
+              }
+            ]
+          },
+          {
+            "title": "Dot Plot",
+            "ui": "flat",
+            "contents": [
+              {
+                "kind": "descr",
+                "content": "The dot plot is generated using Seurat's DotPlot function. The top significant markers are used as input. The sizes of the dots are proportional to the percentage of cells expressing the gene in each group. The colors of the dots are proportional to the average expression of the gene in each group. "
+              },
+              {
+                "kind": "img",
+                "src": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/pre-rx-vs-post-rx-in-Tregs/dotplot.png",
+                "download": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/pre-rx-vs-post-rx-in-Tregs/dotplot.pdf"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Enrichment Analysis": {
+      "#": {
+        "flat": [
+          {
+            "kind": "descr",
+            "content": "The enrichment analysis is done using Enrichr. The significant markers are used as input. "
+          },
+          {
+            "kind": "enrichr",
+            "dir": "/workdir/Immunopipe-output/MarkersFinder/samples.markers/pre-rx-vs-post-rx-in-Tregs"
+          }
+        ]
+      }
+    }
+  }
+}

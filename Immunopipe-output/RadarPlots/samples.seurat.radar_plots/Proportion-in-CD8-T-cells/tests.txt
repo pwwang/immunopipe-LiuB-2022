@@ -1,0 +1,13 @@
+cd8_subcluster	comparison	n	mean	t_pval
+s1	Post non-responsive - Post responsive	5; 9	0.332; 0.433	0.232790235913242
+s2	Post non-responsive - Post responsive	5; 9	0.411; 0.376	0.65093998285499
+s3	Post non-responsive - Post responsive	5; 9	0.19; 0.163	0.470990806552972
+s4	Post non-responsive - Post responsive	5; 9	0.067; 0.028	0.190078678359873
+s1	Post non-responsive - Treatment naive	5; 33	0.332; 0.358	0.513936998925715
+s2	Post non-responsive - Treatment naive	5; 33	0.411; 0.377	0.540846368293841
+s3	Post non-responsive - Treatment naive	5; 33	0.19; 0.211	0.300303205865592
+s4	Post non-responsive - Treatment naive	5; 33	0.067; 0.054	0.648712049206569
+s1	Post responsive - Treatment naive	9; 33	0.433; 0.358	0.347823476125933
+s2	Post responsive - Treatment naive	9; 33	0.376; 0.377	0.993165787998767
+s3	Post responsive - Treatment naive	9; 33	0.163; 0.211	0.22832275802065
+s4	Post responsive - Treatment naive	9; 33	0.028; 0.054	0.0373675797857212

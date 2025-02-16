@@ -1,0 +1,6 @@
+Group	Sample	seurat_clusters	.n
+Post non-responsive	P36_post_1	c10	3
+Post responsive	P19_post_1	c10	13
+Post responsive	P30_post_1	c10	2
+Post responsive	P33_post_1	c10	3
+Post responsive	P35_post_1	c10	5
